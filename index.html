@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container__image__functions">
+            <label for="width">Width</label>
+            <input type="range" id="width" name="width" min="0" max="100" value="100" data-sizing="%"/>
+
+            <label for="border-radius">Border Radius</label>
+            <input type="range" id="border-radius" name="border-radius" min="0" max="100" value="0" data-sizing="%"/>
+
+            <label for="base-color">Base Color</label>
+            <input type="color" id="base-color" name="base-color" min="0" max="100" value="#f0f0f0" data-sizing="%"/>
+
+            <label for="text-color">Text Color</label>
+            <input type="color" id="text-color" name="text-color" min="0" max="100" value="#f0f0f0" data-sizing="%"/>
+
+            <label for="padding">Padding</label>
+            <input type="range" id="padding" name="padding" min="0" max="25" value="0" data-sizing="%"/>
+
+            <label for="blury">Blur</label>
+            <input type="range" id="blury" name="blury" min="0" max="100" value="0" data-sizing="px"/>
+        </div>
+        <div class="container__image__itself">
+            <img src="abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai.jpg" alt="" class="image__contain">
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
